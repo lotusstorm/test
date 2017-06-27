@@ -1,0 +1,73 @@
+.recent__portfolio
+	height: 570px
+	width: 100%
+	display: flex
+	justify-content: center
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 1170px
+		margin-top: 80px
+
+	&__name
+		display: flex
+		flex-flow: row
+		align-items: center
+		margin-bottom: 40px
+	
+		h1
+			@include font("Raleway", 800, 15px)
+			color: $font_color
+		
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: $name_line_color
+
+	&__box__wrapper
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		height: 385px
+		width: 1170px
+
+		a:hover
+			img
+				opacity: 1.0
+				transition: 1s
+
+	&__main__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 410px
+		width: 368px
+		text-align: center
+
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $font_color
+			margin-top: 20px
+		h2
+			@include font("Raleway", 500, 14px)
+			color: $recent_portfolio_h2_color
+			margin-top: 12px
+		p
+			@include font("Raleway", 500, 14px)
+			color: $font_color
+			line-height: 25px
+			margin-top: 19px
+			width: 330px
+
+	&__box
+		height: 250px
+		width: 368px
+		background-color: $logo_bg-color
+
+		img
+			height: 100%
+			width: 100%
+			opacity: 0.3

@@ -1,0 +1,103 @@
+.from__the__journal
+	height: 570px
+	width: 100%
+	display: flex
+	justify-content: center
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 1170px
+		margin-top: 80px
+
+	&__name
+		display: flex
+		flex-flow: row
+		align-items: center
+		margin-bottom: 40px
+	
+		h1
+			@include font("Raleway", 800, 15px)
+			color: $font_color
+		
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: $name_line_color
+
+	&__box__wrapper
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		height: 385px
+		width: 1170px
+
+		a:hover
+			img
+				opacity: 1.0
+				transition: 1s
+
+	&__main__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 410px
+		width: 368px
+
+		p
+			@include font("Raleway", 500, 14px)
+			color: $font_color
+			line-height: 25px
+			margin-top: 15px
+
+	&__box
+		height: 250px
+		width: 368px
+		background-color: $logo_bg-color
+
+		img
+			height: 100%
+			width: 100%
+			opacity: 0.3
+
+	&__date__wrapper
+		display: flex
+		flex-flow: row
+		height: 50px
+		width: 368px
+		align-items: center
+		margin-top: 22px
+
+	&__date__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		height: 45px
+		width: 45px
+		border: 2px solid $from_the_journal_date_box_color
+
+		h1
+			@include font("Raleway", 500, 20px)
+			color: $font_color
+		
+		p
+			@include font("Raleway", 500, 12px)
+			color: $font_color
+			margin-top: -8px
+
+	&__date__content
+		display: flex
+		flex-direction: column
+		margin-left: 10px
+
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $font_color
+		
+		h2
+			@include font("Raleway", 500, 12px)
+			color: $recent_portfolio_h2_color
+			margin-top: 5px

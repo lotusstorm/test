@@ -1,0 +1,638 @@
+$process_section_color: #1bb295
+$process_section_bg__hover: #1abb9c
+$font_color: #606060
+$font_color__hover: #1abb9c
+$font_bg-color__hover: #606060
+$process_section_font_color: #d0d0d0
+$process_section_font_color-2: #dddddd
+$header_border-top-color: #414141
+$header_bg-color: #f5f5f5
+$body_color: #fefefe
+$logo_bg-color: #414141
+$logo_font_color: #e9e9e9
+$btn_color: #fdfdfd
+$cursor_color: #414141
+$name_line_color: #e1e1e1
+$service_box_border_color: #e1e1e1
+$recent_portfolio_h2_color: #1abb9c
+$testimonial_h2_color: #1abb9c
+$from_the_journal_date_box_color: #b1b1b1
+$copyright_bg_color: #333333
+$copyright_font_color: #cacaca
+
+@mixin font($family, $weight, $size)
+	font:
+		family: $family
+		weight: $weight
+		size: $size
+
+*
+	margin: 0
+	padding: 0
+
+body, html
+	height: 100%
+	width: 100%
+
+a
+	text-decoration: none
+
+li
+	list-style-type: none
+.copyright
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 90px
+	background-color: $copyright_bg_color
+
+	&__wrapper
+		width: 1170px
+
+		h1
+			@include font("Raleway", 500, 14px)
+			color: $copyright_font_color
+
+.from__the__journal
+	height: 570px
+	width: 100%
+	display: flex
+	justify-content: center
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 1170px
+		margin-top: 80px
+
+	&__name
+		display: flex
+		flex-flow: row
+		align-items: center
+		margin-bottom: 40px
+	
+		h1
+			@include font("Raleway", 800, 15px)
+			color: $font_color
+		
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: $name_line_color
+
+	&__box__wrapper
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		height: 385px
+		width: 1170px
+
+		a:hover
+			img
+				opacity: 1.0
+				transition: 1s
+
+	&__main__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 410px
+		width: 368px
+
+		p
+			@include font("Raleway", 500, 14px)
+			color: $font_color
+			line-height: 25px
+			margin-top: 15px
+
+	&__box
+		height: 250px
+		width: 368px
+		background-color: $logo_bg-color
+
+		img
+			height: 100%
+			width: 100%
+			opacity: 0.3
+
+	&__date__wrapper
+		display: flex
+		flex-flow: row
+		height: 50px
+		width: 368px
+		align-items: center
+		margin-top: 22px
+
+	&__date__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		height: 45px
+		width: 45px
+		border: 2px solid $from_the_journal_date_box_color
+
+		h1
+			@include font("Raleway", 500, 20px)
+			color: $font_color
+		
+		p
+			@include font("Raleway", 500, 12px)
+			color: $font_color
+			margin-top: -8px
+
+	&__date__content
+		display: flex
+		flex-direction: column
+		margin-left: 10px
+
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $font_color
+		
+		h2
+			@include font("Raleway", 500, 12px)
+			color: $recent_portfolio_h2_color
+			margin-top: 5px
+.header
+	display: flex
+	justify-content: center
+	height: 110px
+	width: 100%
+	background-color: $header_bg-color
+	border-top: 3px solid $header_border-top-color
+	z-index: 5
+
+
+	&__wrapper
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		align-items: center
+		height: 100%
+		width: 1170px
+		
+	&__logo
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 50px
+		width: 50px
+		border-radius: 50px
+		background-color: $logo_bg-color
+
+		h1
+			@include font("BebasNeue", 400, 16px)
+			color: $logo_font_color
+			word-spacing: 5px
+
+	&__menu
+		width: 600px
+
+	&__sub__menu
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		margin: 0
+		padding: 0
+		line-height: 30px
+		p
+			cursor: pointer
+
+		li
+			@include font("Raleway", 800, 13px)
+			a, p
+				color: $font_color
+				&:hover
+					color: $font_color__hover
+			
+			&:hover
+				.header__sub__menu__home, .header__sub__menu__journal__a
+					visibility: visible
+					li:hover
+						background-color: $header_bg-color
+						border-bottom: inset 2px $process_section_bg__hover
+						height: 28px
+						a, p
+							color: $font_color__hover
+
+		&__home
+			top: 68px
+
+		&__journal__a
+			top: 68px
+
+			li:hover
+				.header__sub__menu__journal__b
+					visibility: visible
+
+		&__journal__b
+			bottom: 30px
+			left: 133px
+
+		.header__sub__menu__home, .header__sub__menu__journal__a, .header__sub__menu__journal__b
+			background-color: $font_bg-color__hover
+			position: absolute
+			visibility: hidden
+			li
+				width: 130px
+				padding-left: 3px
+				a, p
+					color: $font_color__hover
+
+.process__section
+	display: flex
+	justify-content: center
+	height: 408px
+	width: 100%
+	background-image: url(../../img/process_section.png)
+	background-size: cover
+	background-position: center center
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 1170px
+		height: 100%
+
+	&__name
+		display: flex
+		flex-flow: wrap
+		justify-content: center
+		align-items: center
+		margin-top: 80px
+
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $process_section_font_color
+
+		p
+			@include font("Raleway", 500, 14px)
+			color: $process_section_font_color
+			text-align: center
+			width: 870px
+			margin-top: 24px
+			line-height: 25px
+
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: rgba($name_line_color, 0.5)
+	
+	&__box__wrapper
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		align-items: center
+		height: 200px
+		width: 1100px
+
+		.line
+			height: 1px
+			width: 180px
+			margin-top: -35px
+			background-color: rgba($name_line_color, 0.5)
+
+	&__main__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 135px
+		width: 135px
+
+		h1
+			@include font("Raleway", 800, 14px)
+			color: $process_section_font_color
+			margin-top: 20px
+
+	&__box
+		height: 95px
+		width: 95px
+		border-radius: 50px
+		border: 2px solid $process_section_color
+
+		&:hover
+			background-color: $process_section_bg__hover
+			transition: 1s
+
+		&_hover1
+			background-position: center center
+			background-image: url(../../img/Process-Section_1.svg)
+			background-repeat: no-repeat
+		
+			&:hover
+				background-image: url(../../img/Process-Section_1-1.svg)
+
+		&_hover2
+			background-position: center center
+			background-image: url(../../img/Process-Section_2.svg)
+			background-repeat: no-repeat
+		
+			&:hover
+				background-image: url(../../img/Process-Section_1-2.svg)
+
+		&_hover3
+			background-position: center center
+			background-image: url(../../img/Process-Section_3.svg)
+			background-repeat: no-repeat
+		
+			&:hover
+				background-image: url(../../img/Process-Section_1-3.svg)
+
+		&_hover4
+			background-position: center center
+			background-image: url(../../img/Process-Section_4.svg)
+			background-repeat: no-repeat
+		
+			&:hover
+				background-image: url(../../img/Process-Section_1-4.svg)
+
+.mid__content
+	display: flex
+	justify-content: center
+	width: 100%
+	background-color: $body_color
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+		width: 1170px
+		height: 1280px
+
+.intro
+	margin: 69px 0
+
+	h1
+		@include font("Raleway", 800, 35px)
+		color: $font_color
+	p
+		@include font("Raleway", 300, 25px)
+		color: $font_color
+
+
+
+
+#block__for__slider
+	width: 1170px
+	height: 550px
+
+	&__viewport 
+		width: 100%
+		height: 550px
+		position: relative
+		overflow: hidden
+		user-select: none
+
+	&__wrapper
+		position: relative
+		width: calc(100% * 3)
+		transition: 1s
+		transition-timing-function: cubic-bezier(.67,.01,.23,1)
+
+		ul, li
+			margin: 0
+			padding: 0
+
+		.slide
+			width: calc(100%/3)
+			list-style: none
+			display: inline
+			float: left
+
+		.slide-img
+			width: 100%
+
+#prev-btn, #next-btn
+	position: absolute
+	width: 50px
+	height: 50px
+	background-color: $btn_color
+	top: calc(50% - 25px)
+
+	&:hover
+		cursor: pointer
+
+#prev-btn
+	left: 20px
+
+	.cursor1
+		height: 5px
+		width: 15px
+		position: relative
+		top: 20px
+		left: 18px
+		background-color: $cursor_color
+		transform: rotate(-45deg)
+
+		&:after
+			content: ""
+			position: absolute
+			top: 5px
+			right: 5px
+			height: 5px
+			width: 15px
+			background-color: $cursor_color
+			transform: rotate(90deg)
+
+#next-btn
+	right: 20px
+
+	.cursor2
+		height: 5px
+		width: 15px
+		position: relative
+		top: 20px
+		left: 18px
+		background-color: $cursor_color
+		transform: rotate(45deg)
+
+		&:after
+			content: ""
+			position: absolute
+			top: 5px
+			left: 5px
+			height: 5px
+			width: 15px
+			background-color: $cursor_color
+			transform: rotate(-90deg)
+
+.recent__portfolio
+	height: 570px
+	width: 100%
+	display: flex
+	justify-content: center
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 1170px
+		margin-top: 80px
+
+	&__name
+		display: flex
+		flex-flow: row
+		align-items: center
+		margin-bottom: 40px
+	
+		h1
+			@include font("Raleway", 800, 15px)
+			color: $font_color
+		
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: $name_line_color
+
+	&__box__wrapper
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		height: 385px
+		width: 1170px
+
+		a:hover
+			img
+				opacity: 1.0
+				transition: 1s
+
+	&__main__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 410px
+		width: 368px
+		text-align: center
+
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $font_color
+			margin-top: 20px
+		h2
+			@include font("Raleway", 500, 14px)
+			color: $recent_portfolio_h2_color
+			margin-top: 12px
+		p
+			@include font("Raleway", 500, 14px)
+			color: $font_color
+			line-height: 25px
+			margin-top: 19px
+			width: 330px
+
+	&__box
+		height: 250px
+		width: 368px
+		background-color: $logo_bg-color
+
+		img
+			height: 100%
+			width: 100%
+			opacity: 0.3
+
+.service__section
+	display: flex
+	flex-direction: column
+	align-items: center
+	height: 525px
+	width: 1170px
+	margin-top: 80px
+	
+	&__name
+		display: flex
+		flex-flow: row
+		align-items: center
+		
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $font_color
+		
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: $name_line_color
+		
+	&__wrapper
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		margin-top: 40px
+		height: 310px
+		width: 1170px
+
+	&__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		border: 4px double $service_box_border_color
+		height: 300px
+		width: 270px
+		
+		img
+			margin-top: 50px
+			height: 60px
+
+		h1
+			@include font("Raleway", 800, 15px)
+			color: $font_color
+			margin-top: 30px
+
+		p
+			@include font("Raleway", 500, 14px)
+			color: $font_color
+			width: 220px
+			text-align: center
+			margin-top: 20px
+			line-height: 25px
+
+
+.testimonial
+	display: flex
+	justify-content: center
+	height: 330px
+	width: 100%
+	background-image: url(../../img/testimonial.png)
+	background-size: cover
+	background-position: center center
+	
+	&__name
+		display: flex
+		flex-flow: wrap
+		align-items: center
+		margin-top: 80px
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 1170px
+		height: 100%
+
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $process_section_font_color
+
+		p
+			@include font("Raleway", 200, 20px)
+			color: $process_section_font_color
+			text-align: center
+			width: 942px
+			margin-top: 40px
+			line-height: 30px
+
+		h2
+			@include font("Raleway", 800, 12px)
+			color: $testimonial_h2_color
+			margin-top: 25px
+
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: rgba($name_line_color, 0.5)
+	

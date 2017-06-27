@@ -1,0 +1,85 @@
+.header
+	display: flex
+	justify-content: center
+	height: 110px
+	width: 100%
+	background-color: $header_bg-color
+	border-top: 3px solid $header_border-top-color
+	z-index: 5
+
+
+	&__wrapper
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		align-items: center
+		height: 100%
+		width: 1170px
+		
+	&__logo
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 50px
+		width: 50px
+		border-radius: 50px
+		background-color: $logo_bg-color
+
+		h1
+			@include font("BebasNeue", 400, 16px)
+			color: $logo_font_color
+			word-spacing: 5px
+
+	&__menu
+		width: 600px
+
+	&__sub__menu
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		margin: 0
+		padding: 0
+		line-height: 30px
+		p
+			cursor: pointer
+
+		li
+			@include font("Raleway", 800, 13px)
+			a, p
+				color: $font_color
+				&:hover
+					color: $font_color__hover
+			
+			&:hover
+				.header__sub__menu__home, .header__sub__menu__journal__a
+					visibility: visible
+					li:hover
+						background-color: $header_bg-color
+						border-bottom: inset 2px $process_section_bg__hover
+						height: 28px
+						a, p
+							color: $font_color__hover
+
+		&__home
+			top: 68px
+
+		&__journal__a
+			top: 68px
+
+			li:hover
+				.header__sub__menu__journal__b
+					visibility: visible
+
+		&__journal__b
+			bottom: 30px
+			left: 133px
+
+		.header__sub__menu__home, .header__sub__menu__journal__a, .header__sub__menu__journal__b
+			background-color: $font_bg-color__hover
+			position: absolute
+			visibility: hidden
+			li
+				width: 130px
+				padding-left: 3px
+				a, p
+					color: $font_color__hover

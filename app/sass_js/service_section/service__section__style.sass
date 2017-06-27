@@ -1,0 +1,56 @@
+.service__section
+	display: flex
+	flex-direction: column
+	align-items: center
+	height: 525px
+	width: 1170px
+	margin-top: 80px
+	
+	&__name
+		display: flex
+		flex-flow: row
+		align-items: center
+		
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $font_color
+		
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: $name_line_color
+		
+	&__wrapper
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		margin-top: 40px
+		height: 310px
+		width: 1170px
+
+	&__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		border: 4px double $service_box_border_color
+		height: 300px
+		width: 270px
+		
+		img
+			margin-top: 50px
+			height: 60px
+
+		h1
+			@include font("Raleway", 800, 15px)
+			color: $font_color
+			margin-top: 30px
+
+		p
+			@include font("Raleway", 500, 14px)
+			color: $font_color
+			width: 220px
+			text-align: center
+			margin-top: 20px
+			line-height: 25px
+
