@@ -7,7 +7,6 @@
 	border-top: 3px solid $header_border-top-color
 	z-index: 5
 
-
 	&__wrapper
 		display: flex
 		flex-flow: row wrap
@@ -15,7 +14,15 @@
 		align-items: center
 		height: 100%
 		width: 1170px
-		
+		@media only screen and (min-width : 768px) and (max-width : 1170px) and (orientation : portrait)
+			width: 968px
+		@media only screen and (min-width : 768px) and (max-width : 1170px) and (orientation : landscape)
+			width: 1020px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 567px)
+			width: 578px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			width: 578px
+			
 	&__logo
 		display: flex
 		justify-content: center
@@ -32,6 +39,10 @@
 
 	&__menu
 		width: 600px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			width: 450px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			width: 450px
 
 	&__sub__menu
 		display: flex

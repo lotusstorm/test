@@ -19,6 +19,8 @@
 		align-items: center
 		width: 1170px
 		height: 100%
+		@media only screen and (min-device-width : 320px) and (max-device-width : 768px)
+			width: 568px
 
 		h1
 			@include font("Raleway", 800, 16px)
@@ -31,6 +33,10 @@
 			width: 942px
 			margin-top: 40px
 			line-height: 30px
+			@media only screen and (min-device-width : 320px) and (max-device-width : 768px)
+				width: 560px
+			@media only screen and (min-width : 320px) and (max-width : 768px)
+				width: 560px
 
 		h2
 			@include font("Raleway", 800, 12px)

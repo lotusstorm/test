@@ -6,13 +6,22 @@
 	background-image: url(../../img/process_section.png)
 	background-size: cover
 	background-position: center center
+	@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+		height: 600px
+	@media only screen and (min-width : 320px) and (max-width : 767px)
+		height: 600px
 
 	&__wrapper
 		display: flex
 		flex-direction: column
 		align-items: center
 		width: 1170px
-		height: 100%
+		@media only screen and (min-width : 768px) and (max-width : 1170px)
+			width: 968px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			width: 568px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			width: 568px
 
 	&__name
 		display: flex
@@ -29,9 +38,14 @@
 			@include font("Raleway", 500, 14px)
 			color: $process_section_font_color
 			text-align: center
-			width: 870px
+			width: 960px
 			margin-top: 24px
 			line-height: 25px
+			@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+				width: 560px
+			@media only screen and (min-width : 320px) and (max-width : 767px)
+				width: 560px
+
 
 		.line
 			height: 1px
@@ -41,17 +55,31 @@
 	
 	&__box__wrapper
 		display: flex
-		flex-flow: row
+		flex-flow: row wrap
 		justify-content: space-between
 		align-items: center
 		height: 200px
 		width: 1100px
+		@media only screen and (min-width : 768px) and (max-width : 1170px)
+			width: 968px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			height: 400px
+			width: 368px
+			justify-content: center
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			height: 400px
+			width: 368px
+			justify-content: center
 
 		.line
 			height: 1px
-			width: 180px
+			width: 13%
 			margin-top: -35px
 			background-color: rgba($name_line_color, 0.5)
+			@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+				display: none
+			@media only screen and (min-width : 320px) and (max-width : 767px)
+				display: none
 
 	&__main__box
 		display: flex
@@ -59,6 +87,10 @@
 		align-items: center
 		height: 135px
 		width: 135px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			margin: 0 20px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			margin: 0 20px
 
 		h1
 			@include font("Raleway", 800, 14px)

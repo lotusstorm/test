@@ -7,11 +7,26 @@
 	&__wrapper
 		display: flex
 		flex-direction: column
+		align-items: center
 		width: 1170px
 		height: 1280px
+		@media only screen and (min-width : 768px) and (max-width : 1170px)
+			height: 1540px
+			width: 1024px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			height: 980px
+			width: 578px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			height: 980px
+			width: 578px
 
 .intro
 	margin: 69px 0
+	width: 100%
+	@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)
+		width: 968px
+	@media only screen and (min-device-width : 320px) and (max-device-width : 568px)
+		width: 568px
 
 	h1
 		@include font("Raleway", 800, 35px)

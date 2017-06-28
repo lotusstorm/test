@@ -3,6 +3,12 @@
 	width: 100%
 	display: flex
 	justify-content: center
+	@media only screen and (min-width : 768px) and (max-width : 1170px)
+		height: 1024px
+	@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+		height: 1424px
+	@media only screen and (min-width : 320px) and (max-width : 767px)
+		height: 1424px
 
 	&__wrapper
 		display: flex
@@ -10,6 +16,12 @@
 		align-items: center
 		width: 1170px
 		margin-top: 80px
+		@media only screen and (min-width : 768px) and (max-width : 1170px)
+			width: 968px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			width: 568px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			width: 568px
 
 	&__name
 		display: flex
@@ -29,10 +41,20 @@
 
 	&__box__wrapper
 		display: flex
-		flex-flow: row
+		flex-flow: row wrap
 		justify-content: space-between
 		height: 385px
 		width: 1170px
+		@media only screen and (min-width : 768px) and (max-width : 1170px)
+			height: 830px
+			width: 768px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			height: 530px
+			width: 360px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			height: 530px
+			width: 360px
+
 
 		a:hover
 			img
@@ -45,6 +67,7 @@
 		align-items: center
 		height: 410px
 		width: 368px
+		margin-bottom: 30px
 
 		p
 			@include font("Raleway", 500, 14px)
