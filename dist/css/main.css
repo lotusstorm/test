@@ -35,6 +35,212 @@ li {
       font-size: 14px;
       color: #cacaca; }
 
+.from__the__journal {
+  height: 570px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (min-width: 768px) and (max-width: 1170px) {
+    .from__the__journal {
+      height: 1024px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .from__the__journal {
+      height: 1424px; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .from__the__journal {
+      height: 1424px; } }
+  .from__the__journal__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1170px;
+    margin-top: 80px; }
+    @media only screen and (min-width: 768px) and (max-width: 1170px) {
+      .from__the__journal__wrapper {
+        width: 968px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+      .from__the__journal__wrapper {
+        width: 568px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .from__the__journal__wrapper {
+        width: 568px; } }
+  .from__the__journal__name {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px; }
+    .from__the__journal__name h1 {
+      font-family: "Raleway";
+      font-weight: 800;
+      font-size: 15px;
+      color: #606060; }
+    .from__the__journal__name .line {
+      height: 1px;
+      width: 100px;
+      margin: 0 30px;
+      background-color: #e1e1e1; }
+  .from__the__journal__box__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 385px;
+    width: 1170px; }
+    @media only screen and (min-width: 768px) and (max-width: 1170px) {
+      .from__the__journal__box__wrapper {
+        height: 830px;
+        width: 768px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+      .from__the__journal__box__wrapper {
+        height: 530px;
+        width: 360px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .from__the__journal__box__wrapper {
+        height: 530px;
+        width: 360px; } }
+    .from__the__journal__box__wrapper a:hover img {
+      opacity: 1.0;
+      -webkit-transition: 1s;
+      transition: 1s; }
+  .from__the__journal__main__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 410px;
+    width: 368px;
+    margin-bottom: 30px; }
+    .from__the__journal__main__box p {
+      font-family: "Raleway";
+      font-weight: 500;
+      font-size: 14px;
+      color: #606060;
+      line-height: 25px;
+      margin-top: 15px; }
+  .from__the__journal__box {
+    height: 250px;
+    width: 368px;
+    background-color: #414141; }
+    .from__the__journal__box img {
+      height: 100%;
+      width: 100%;
+      opacity: 0.3; }
+  .from__the__journal__date__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    height: 50px;
+    width: 368px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 22px; }
+  .from__the__journal__date__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 45px;
+    width: 45px;
+    border: 2px solid #b1b1b1; }
+    .from__the__journal__date__box h1 {
+      font-family: "Raleway";
+      font-weight: 500;
+      font-size: 20px;
+      color: #606060; }
+    .from__the__journal__date__box p {
+      font-family: "Raleway";
+      font-weight: 500;
+      font-size: 12px;
+      color: #606060;
+      margin-top: -8px; }
+  .from__the__journal__date__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px; }
+    .from__the__journal__date__content h1 {
+      font-family: "Raleway";
+      font-weight: 800;
+      font-size: 16px;
+      color: #606060; }
+    .from__the__journal__date__content h2 {
+      font-family: "Raleway";
+      font-weight: 500;
+      font-size: 12px;
+      color: #1abb9c;
+      margin-top: 5px; }
+
 @-webkit-keyframes menu_scroll {
   0% {
     top: 68px; }
@@ -247,212 +453,6 @@ li {
   -webkit-animation: menu_scroll 0.1s linear forwards;
           animation: menu_scroll 0.1s linear forwards; }
 
-.from__the__journal {
-  height: 570px;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  @media only screen and (min-width: 768px) and (max-width: 1170px) {
-    .from__the__journal {
-      height: 1024px; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-    .from__the__journal {
-      height: 1424px; } }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .from__the__journal {
-      height: 1424px; } }
-  .from__the__journal__wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 1170px;
-    margin-top: 80px; }
-    @media only screen and (min-width: 768px) and (max-width: 1170px) {
-      .from__the__journal__wrapper {
-        width: 968px; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-      .from__the__journal__wrapper {
-        width: 568px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-      .from__the__journal__wrapper {
-        width: 568px; } }
-  .from__the__journal__name {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 40px; }
-    .from__the__journal__name h1 {
-      font-family: "Raleway";
-      font-weight: 800;
-      font-size: 15px;
-      color: #606060; }
-    .from__the__journal__name .line {
-      height: 1px;
-      width: 100px;
-      margin: 0 30px;
-      background-color: #e1e1e1; }
-  .from__the__journal__box__wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 385px;
-    width: 1170px; }
-    @media only screen and (min-width: 768px) and (max-width: 1170px) {
-      .from__the__journal__box__wrapper {
-        height: 830px;
-        width: 768px; } }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-      .from__the__journal__box__wrapper {
-        height: 530px;
-        width: 360px; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-      .from__the__journal__box__wrapper {
-        height: 530px;
-        width: 360px; } }
-    .from__the__journal__box__wrapper a:hover img {
-      opacity: 1.0;
-      -webkit-transition: 1s;
-      transition: 1s; }
-  .from__the__journal__main__box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 410px;
-    width: 368px;
-    margin-bottom: 30px; }
-    .from__the__journal__main__box p {
-      font-family: "Raleway";
-      font-weight: 500;
-      font-size: 14px;
-      color: #606060;
-      line-height: 25px;
-      margin-top: 15px; }
-  .from__the__journal__box {
-    height: 250px;
-    width: 368px;
-    background-color: #414141; }
-    .from__the__journal__box img {
-      height: 100%;
-      width: 100%;
-      opacity: 0.3; }
-  .from__the__journal__date__wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    height: 50px;
-    width: 368px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 22px; }
-  .from__the__journal__date__box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 45px;
-    width: 45px;
-    border: 2px solid #b1b1b1; }
-    .from__the__journal__date__box h1 {
-      font-family: "Raleway";
-      font-weight: 500;
-      font-size: 20px;
-      color: #606060; }
-    .from__the__journal__date__box p {
-      font-family: "Raleway";
-      font-weight: 500;
-      font-size: 12px;
-      color: #606060;
-      margin-top: -8px; }
-  .from__the__journal__date__content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 10px; }
-    .from__the__journal__date__content h1 {
-      font-family: "Raleway";
-      font-weight: 800;
-      font-size: 16px;
-      color: #606060; }
-    .from__the__journal__date__content h2 {
-      font-family: "Raleway";
-      font-weight: 500;
-      font-size: 12px;
-      color: #1abb9c;
-      margin-top: 5px; }
-
 .mid__content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -637,7 +637,7 @@ li {
           justify-content: center;
   height: 408px;
   width: 100%;
-  background-image: url(../../img/process_section.png);
+  background-image: url(../img/process_section.png);
   background-size: cover;
   background-position: center center; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
@@ -790,6 +790,9 @@ li {
       font-size: 14px;
       color: #d0d0d0;
       margin-top: 20px; }
+
+.circle_bg {
+  fill-opacity: 0; }
 
 .svg1:hover .icon1-1, .svg1:hover .icon2-1, .svg1:hover .icon3-1, .svg1:hover .icon4-1, .svg2:hover .icon1-1, .svg2:hover .icon2-1, .svg2:hover .icon3-1, .svg2:hover .icon4-1, .svg3:hover .icon1-1, .svg3:hover .icon2-1, .svg3:hover .icon3-1, .svg3:hover .icon4-1, .svg4:hover .icon1-1, .svg4:hover .icon2-1, .svg4:hover .icon3-1, .svg4:hover .icon4-1 {
   stroke: #f5f5f5;
@@ -1097,7 +1100,7 @@ li {
           justify-content: center;
   height: 330px;
   width: 100%;
-  background-image: url(../../img/testimonial.png);
+  background-image: url(../img/testimonial.png);
   background-size: cover;
   background-position: center center; }
   .testimonial__name {

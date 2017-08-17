@@ -53,6 +53,132 @@ li
 			@include font("Raleway", 500, 14px)
 			color: $copyright_font_color
 
+.from__the__journal
+	height: 570px
+	width: 100%
+	display: flex
+	justify-content: center
+	@media only screen and (min-width : 768px) and (max-width : 1170px)
+		height: 1024px
+	@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+		height: 1424px
+	@media only screen and (min-width : 320px) and (max-width : 767px)
+		height: 1424px
+
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 1170px
+		margin-top: 80px
+		@media only screen and (min-width : 768px) and (max-width : 1170px)
+			width: 968px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			width: 568px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			width: 568px
+
+	&__name
+		display: flex
+		flex-flow: row
+		align-items: center
+		margin-bottom: 40px
+	
+		h1
+			@include font("Raleway", 800, 15px)
+			color: $font_color
+		
+		.line
+			height: 1px
+			width: 100px
+			margin: 0 30px
+			background-color: $name_line_color
+
+	&__box__wrapper
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		height: 385px
+		width: 1170px
+		@media only screen and (min-width : 768px) and (max-width : 1170px)
+			height: 830px
+			width: 768px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			height: 530px
+			width: 360px
+		@media only screen and (min-width : 320px) and (max-width : 767px)
+			height: 530px
+			width: 360px
+
+
+		a:hover
+			img
+				opacity: 1.0
+				transition: 1s
+
+	&__main__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 410px
+		width: 368px
+		margin-bottom: 30px
+
+		p
+			@include font("Raleway", 500, 14px)
+			color: $font_color
+			line-height: 25px
+			margin-top: 15px
+
+	&__box
+		height: 250px
+		width: 368px
+		background-color: $logo_bg-color
+
+		img
+			height: 100%
+			width: 100%
+			opacity: 0.3
+
+	&__date__wrapper
+		display: flex
+		flex-flow: row
+		height: 50px
+		width: 368px
+		align-items: center
+		margin-top: 22px
+
+	&__date__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		height: 45px
+		width: 45px
+		border: 2px solid $from_the_journal_date_box_color
+
+		h1
+			@include font("Raleway", 500, 20px)
+			color: $font_color
+		
+		p
+			@include font("Raleway", 500, 12px)
+			color: $font_color
+			margin-top: -8px
+
+	&__date__content
+		display: flex
+		flex-direction: column
+		margin-left: 10px
+
+		h1
+			@include font("Raleway", 800, 16px)
+			color: $font_color
+		
+		h2
+			@include font("Raleway", 500, 12px)
+			color: $recent_portfolio_h2_color
+			margin-top: 5px
 @keyframes menu_scroll
 	0%
 		top: 68px
@@ -193,132 +319,6 @@ li
 .menu_scroll
 	animation: menu_scroll 0.1s linear forwards
 
-.from__the__journal
-	height: 570px
-	width: 100%
-	display: flex
-	justify-content: center
-	@media only screen and (min-width : 768px) and (max-width : 1170px)
-		height: 1024px
-	@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
-		height: 1424px
-	@media only screen and (min-width : 320px) and (max-width : 767px)
-		height: 1424px
-
-	&__wrapper
-		display: flex
-		flex-direction: column
-		align-items: center
-		width: 1170px
-		margin-top: 80px
-		@media only screen and (min-width : 768px) and (max-width : 1170px)
-			width: 968px
-		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
-			width: 568px
-		@media only screen and (min-width : 320px) and (max-width : 767px)
-			width: 568px
-
-	&__name
-		display: flex
-		flex-flow: row
-		align-items: center
-		margin-bottom: 40px
-	
-		h1
-			@include font("Raleway", 800, 15px)
-			color: $font_color
-		
-		.line
-			height: 1px
-			width: 100px
-			margin: 0 30px
-			background-color: $name_line_color
-
-	&__box__wrapper
-		display: flex
-		flex-flow: row wrap
-		justify-content: space-between
-		height: 385px
-		width: 1170px
-		@media only screen and (min-width : 768px) and (max-width : 1170px)
-			height: 830px
-			width: 768px
-		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
-			height: 530px
-			width: 360px
-		@media only screen and (min-width : 320px) and (max-width : 767px)
-			height: 530px
-			width: 360px
-
-
-		a:hover
-			img
-				opacity: 1.0
-				transition: 1s
-
-	&__main__box
-		display: flex
-		flex-direction: column
-		align-items: center
-		height: 410px
-		width: 368px
-		margin-bottom: 30px
-
-		p
-			@include font("Raleway", 500, 14px)
-			color: $font_color
-			line-height: 25px
-			margin-top: 15px
-
-	&__box
-		height: 250px
-		width: 368px
-		background-color: $logo_bg-color
-
-		img
-			height: 100%
-			width: 100%
-			opacity: 0.3
-
-	&__date__wrapper
-		display: flex
-		flex-flow: row
-		height: 50px
-		width: 368px
-		align-items: center
-		margin-top: 22px
-
-	&__date__box
-		display: flex
-		flex-direction: column
-		align-items: center
-		justify-content: center
-		height: 45px
-		width: 45px
-		border: 2px solid $from_the_journal_date_box_color
-
-		h1
-			@include font("Raleway", 500, 20px)
-			color: $font_color
-		
-		p
-			@include font("Raleway", 500, 12px)
-			color: $font_color
-			margin-top: -8px
-
-	&__date__content
-		display: flex
-		flex-direction: column
-		margin-left: 10px
-
-		h1
-			@include font("Raleway", 800, 16px)
-			color: $font_color
-		
-		h2
-			@include font("Raleway", 500, 12px)
-			color: $recent_portfolio_h2_color
-			margin-top: 5px
 .mid__content
 	display: flex
 	justify-content: center
@@ -464,7 +464,7 @@ li
 	justify-content: center
 	height: 408px
 	width: 100%
-	background-image: url(../../img/process_section.png)
+	background-image: url(../img/process_section.png)
 	background-size: cover
 	background-position: center center
 	@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
@@ -558,8 +558,11 @@ li
 			color: $process_section_font_color
 			margin-top: 20px
 
+.circle_bg
+	fill-opacity: 0
+
 .svg1, .svg2, .svg3, .svg4
-	&:hover 
+	&:hover
 		.icon1-1, .icon2-1, .icon3-1, .icon4-1
 			stroke: #f5f5f5
 			transition: 0.7s
@@ -746,7 +749,7 @@ li
 	justify-content: center
 	height: 330px
 	width: 100%
-	background-image: url(../../img/testimonial.png)
+	background-image: url(../img/testimonial.png)
 	background-size: cover
 	background-position: center center
 	
